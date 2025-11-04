@@ -10,7 +10,7 @@
 	const roundedClasses = {
 		none: '',
 		partial: 'rounded-tr-[6cqw]',
-		full: 'rounded-tr-[50px] rounded-bl-[50px]'
+		full: 'rounded-tr-[6cqw] rounded-bl-[6cqw]'
 	};
 
 	const borderClasses = border

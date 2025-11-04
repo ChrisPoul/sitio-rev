@@ -20,7 +20,7 @@
 
 	<!-- Title Overlay -->
 	<div class="absolute {positionClasses[position]}">
-		<div class="bg-red-dark text-white-primary px-30 py-6 {roundedClasses[position]}">
+		<div class="bg-red-dark text-white-primary min-w-200 px-30 py-6 {roundedClasses[position]}">
 			<h1 class="text-w11">
 				{@render title()}
 			</h1>
@@ -29,7 +29,7 @@
 </section>
 
 {#if paragraph}
-	<p class="text-w8 text-center px-40 py-18">
+	<p class="text-w8 text-justify px-40 mx-auto w-fit py-18">
 		{@render paragraph()}
 	</p>
 {/if}
