@@ -9,7 +9,7 @@
 
 	const roundedClasses = {
 		none: '',
-		partial: 'rounded-tr-[50px]',
+		partial: 'rounded-tr-[6cqw]',
 		full: 'rounded-tr-[50px] rounded-bl-[50px]'
 	};
 
