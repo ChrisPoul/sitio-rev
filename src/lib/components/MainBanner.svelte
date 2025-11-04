@@ -1,5 +1,5 @@
 <script>
-	let { imageSrc, title, position = 'left' } = $props();
+	let { imageSrc, title, position = 'left', paragraph } = $props();
 
 	const positionClasses = {
 		left: 'bottom-0 left-0 translate-y-14',
@@ -27,3 +27,9 @@
 		</div>
 	</div>
 </section>
+
+{#if paragraph}
+	<p class="text-w8 text-center px-40 py-18">
+		{@render paragraph()}
+	</p>
+{/if}
