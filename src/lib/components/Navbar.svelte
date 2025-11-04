@@ -1,4 +1,6 @@
 <script>
+	import { page } from '$app/stores';
+
 	let mobileMenuOpen = $state(false);
 
 	const navLinks = [
@@ -9,6 +11,10 @@
 		{ name: 'GALERÍA', href: '/galeria' },
 		{ name: 'CONTACTO', href: '/contacto' }
 	];
+
+	function isActive(href) {
+		return $page.url.pathname === href;
+	}
 
 	function toggleMobileMenu() {
 		mobileMenuOpen = !mobileMenuOpen;
@@ -34,7 +40,7 @@
 				{#each navLinks as link}
 					<a
 						href={link.href}
-						class="hover:text-black-primary text-red-dark font-semibold transition-colors duration-200"
+						class="hover:text-black-primary text-red-dark font-semibold transition-colors duration-200 {isActive(link.href) ? 'underline' : ''}"
 					>
 						{link.name}
 					</a>
