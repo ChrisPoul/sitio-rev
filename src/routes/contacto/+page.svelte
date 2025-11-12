@@ -2,6 +2,7 @@
 	import MainBanner from '$lib/components/MainBanner.svelte';
 	import Card from '$lib/components/Card.svelte';
 	import Button from '$lib/components/Button.svelte';
+	import ContactInfo from '$lib/components/ContactInfo.svelte';
 
 	let formData = $state({
 		tipoProducto: '',
@@ -252,3 +253,5 @@
 		</form>
 	</Card>
 </section>
+
+<ContactInfo />
