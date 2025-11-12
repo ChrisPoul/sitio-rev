@@ -28,7 +28,7 @@
 </script>
 
 <!-- Main Banner -->
-<MainBanner imageSrc="/images/contacto-banner.jpg" position="left">
+<MainBanner imageSrc="/6.png" position="left">
 	{#snippet title()}
 		Estamos listos para<br />
 		<b>trabajar contigo</b>

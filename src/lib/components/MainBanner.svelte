@@ -12,7 +12,7 @@
 	};
 </script>
 
-<section class="relative w-full h-180 mb-14">
+<section class="relative w-full mb-14">
 	<!-- Background Image -->
 	{#if imageSrc}
 		<img src={imageSrc} alt="" class="w-full bg-black h-full object-cover" />
