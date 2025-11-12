@@ -57,7 +57,7 @@
 	];
 </script>
 
-<MainBanner imageSrc="/images/servicios-banner.jpg" position="left">
+<MainBanner imageSrc="/5.png" position="left">
 	{#snippet title()}
 		A tu lado <b>antes, durante<br />
 		y después</b> de la entrega

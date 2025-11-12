@@ -16,15 +16,20 @@
 
 <!-- Hero Content Section -->
 <section class="py-16">
-	<div class="container mx-auto px-8">
+	<div class="container mx-auto px-main">
 		<div class="grid grid-cols-2 gap-8 items-center">
 			<!-- Image Left -->
 			<Card rounded="full" class="overflow-hidden">
-				<div class="bg-black-primary w-full h-96"></div>
+				<img
+					src="/1.png"
+					alt="Carrocerías 3G equipo trabajando en una carrocería"
+					class="w-full h-auto"
+					loading="lazy"
+				/>
 			</Card>
 			<!-- Text Right -->
 			<div>
-				<p class="text-w6 text-gray-700">
+				<p class="text-w7 text-gray-700 text-justify">
 					Desarrollamos productos para la industria del transporte, los cuales son
 					carrocerías sobre chasís fijas y desmontables. 
 					<br><br>
@@ -102,35 +107,39 @@
 
 		<div class="grid grid-cols-4 gap-8 max-w-6xl mx-auto mb-12">
 			<div class="text-center">
-				<div
-					class="bg-red-dark text-white-primary rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center text-w9 font-bold"
-				>
-					E
-				</div>
+				<img
+					src="/EXPERIENCIA.svg"
+					alt="Icono de experiencia"
+					class="mx-auto mb-4 h-40"
+					loading="lazy"
+				/>
 				<h3 class="text-w6 text-white-primary mb-2">EXPERIENCIA</h3>
 			</div>
 			<div class="text-center">
-				<div
-					class="bg-red-dark text-white-primary rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center text-w9 font-bold"
-				>
-					C
-				</div>
+				<img
+					src="/COMPROMISO.svg"
+					alt="Icono de compromiso"
+					class="mx-auto mb-4 h-40"
+					loading="lazy"
+				/>
 				<h3 class="text-w6 text-white-primary mb-2">COMPROMISO</h3>
 			</div>
 			<div class="text-center">
-				<div
-					class="bg-red-dark text-white-primary rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center text-w9 font-bold"
-				>
-					I
-				</div>
+				<img
+					src="/INNOVACION.svg"
+					alt="Icono de innovación"
+					class="mx-auto mb-4 h-40"
+					loading="lazy"
+				/>
 				<h3 class="text-w6 text-white-primary mb-2">INNOVACIÓN</h3>
 			</div>
 			<div class="text-center">
-				<div
-					class="bg-red-dark text-white-primary rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center text-w9 font-bold"
-				>
-					C
-				</div>
+				<img
+					src="/CALIDAD.svg"
+					alt="Icono de calidad"
+					class="mx-auto mb-4 h-40"
+					loading="lazy"
+				/>
 				<h3 class="text-w6 text-white-primary mb-2">CALIDAD</h3>
 			</div>
 		</div>
@@ -145,22 +154,27 @@
 
 <!-- Additional Services Section -->
 <section class="py-24 bg-white-primary">
-	<div class="container mx-auto px-8">
+	<div class="container mx-auto px-main">
 		<div class="grid grid-cols-2 gap-8 items-center">
 			<!-- Text and Button Left -->
 			<div class="flex flex-col items-end">
-				<p class="text-w6 text-right text-gray-700 mb-6">
+				<p class="text-w7 text-justify text-gray-700 mb-7">
 					Porque sabemos que el valor de tu inversión está en el día a día
 					Contamos con servicios adicionales que prolongan la vida útil de tus
 					carrocerías
 				</p>
-				<Button variant="primary" textSize="xl">
+				<Button variant="primary" textSize="lg">
 					ALARGA LA VIDA DE TUS CARROCERÍAS
 				</Button>
 			</div>
 			<!-- Image Right -->
 			<Card rounded="full" class="overflow-hidden">
-				<div class="bg-black-primary w-full h-96"></div>
+				<img
+					src="/2.png"
+					alt="Carrocerías 3G ofreciendo servicios adicionales"
+					class="w-full h-auto"
+					loading="lazy"
+				/>
 			</Card>
 		</div>
 	</div>
@@ -170,7 +184,7 @@
 <section class="relative w-full min-h-[600px] bg-black flex items-center justify-center">
 	<!-- Background Image -->
 	<img
-		src="/images/cta-banner.jpg"
+		src="/3.png"
 		alt=""
 		class="absolute inset-0 w-full h-full object-cover"
 	/>

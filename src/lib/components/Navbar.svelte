@@ -26,13 +26,11 @@
 </script>
 
 <nav class="bg-white-primary shadow-md sticky top-0 z-50">
-	<div class="px-8">
-		<div class="flex justify-between items-center h-20">
+	<div class="px-28">
+		<div class="flex justify-between items-center h-24">
 			<!-- Logo -->
-			<a href="/" class="flex items-center">
-				<span class="text-w9 font-bold text-red-dark"
-					>CARROCERÍAS 3G</span
-				>
+			<a href="/" class="flex items-center h-16">
+				<img src="/LOGO.svg" alt="Carrocerías 3G" class="h-full w-auto" />
 			</a>
 
 			<!-- Desktop Navigation -->

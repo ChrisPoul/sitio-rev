@@ -4,7 +4,7 @@
 </script>
 
 <!-- Main Banner -->
-<MainBanner imageSrc="/images/nosotros-banner.jpg">
+<MainBanner imageSrc="/4.png">
 	{#snippet title()}
 		<b>Aliados comerciales</b> que<br />
 		suman valor a tu inversión
