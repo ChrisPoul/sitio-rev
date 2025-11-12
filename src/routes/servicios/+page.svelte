@@ -2,32 +2,32 @@
 	import MainBanner from '$lib/components/MainBanner.svelte';
 	import ServiceCard from '$lib/components/ServiceCard.svelte';
 	import Button from '$lib/components/Button.svelte';
-	const services = [
-		{
-			title: 'DISEÑOS PERSONALIZADOS',
-			description:
-				'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetuer',
-			imageSrc: '/images/disenos-personalizados.jpg'
-		},
-		{
-			title: 'CÁLCULO VOLUMÉTRICO',
-			description:
-				'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetuer',
-			imageSrc: '/images/calculo-volumetrico.jpg'
-		},
-		{
-			title: 'MANTENIMIENTO Y REPARACIÓN',
-			description:
-				'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetuer',
-			imageSrc: '/images/mantenimiento-reparacion.jpg'
-		},
-		{
-			title: 'ASESORÍA TÉCNICA',
-			description:
-				'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetuer',
-			imageSrc: '/images/asesoria-tecnica.jpg'
-		}
-	];
+const services = [
+	{
+		title: 'CÁLCULO VOLUMÉTRICO',
+		description:
+			'Nuestro servicio de ingeniería incluye el cálculo de cupo por estiba, asegurando que el diseño de su caja fija seca aproveche al máximo cada centímetro cúbico según el tipo de carga que transporta.',
+		imageSrc: '/images/calculo-volumetrico.jpg'
+	},
+	{
+		title: 'DISTRIBUCIÓN DE CARGA',
+		description:
+			'Cálculo de carga exacto respetando la distribución 60-40. Diseñamos con geometría perfecta basada en las dimensiones de su chasis para lograr una carga equilibrada.',
+		imageSrc: '/images/distribucion-carga.jpg'
+	},
+	{
+		title: 'DISEÑOS PERSONALIZADOS',
+		description:
+			'Partimos de un diseño maestro optimizado que adaptamos con planos de fabricación específicos para cumplir con los requerimientos únicos de cada cliente y su chasis.',
+		imageSrc: '/images/disenos-personalizados.jpg'
+	},
+	{
+		title: 'INGENIERÍA INVERSA',
+		description:
+			'Digitalizamos su caja y la replicamos con precisión milimétrica. Creamos planos partiendo de una muestra física para fabricar más unidades idénticas.',
+		imageSrc: '/images/ingenieria-inversa.jpg'
+	}
+];
 
 	const additionalServices = [
 		{
