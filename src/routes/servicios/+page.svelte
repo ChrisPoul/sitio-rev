@@ -31,28 +31,52 @@ const services = [
 
 	const additionalServices = [
 		{
-			title: 'SERVICIO ADICIONAL 1',
+			title: 'Diagnóstico',
 			description:
-				'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetuer',
-			imageSrc: '/images/servicio-adicional-1.jpg'
+				'Realizamos diagnóstico de su carrocería para validar si la unidad es apta para reintroducirse al trabajo diario o requiere servicio de reparación o mantenimiento.',
+			imageSrc: '/images/placeholder-servicio.jpg'
 		},
 		{
-			title: 'SERVICIO ADICIONAL 2',
+			title: 'Rehabilitado',
 			description:
-				'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetuer',
-			imageSrc: '/images/servicio-adicional-2.jpg'
+				'Rehabilitamos unidades que están por salir del parque vehicular para su reingreso y que puedan volver al trabajo diario.',
+			imageSrc: '/images/placeholder-servicio.jpg'
 		},
 		{
-			title: 'SERVICIO ADICIONAL 3',
+			title: 'Reparación',
 			description:
-				'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetuer',
-			imageSrc: '/images/servicio-adicional-3.jpg'
+				'Reparamos o fabricamos elementos que conforman la carrocería en general, como marco posterior, paneles, toldo, puertas cortina o abatibles, rampas y más.',
+			imageSrc: '/images/placeholder-servicio.jpg'
 		},
 		{
-			title: 'SERVICIO ADICIONAL 4',
+			title: 'Refaccionamiento',
 			description:
-				'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetuer',
-			imageSrc: '/images/servicio-adicional-4.jpg'
+				'Suministramos refacciones y accesorios para que sus unidades no se detengan y estén adecuadas para cada ruta.',
+			imageSrc: '/images/placeholder-servicio.jpg'
+		},
+		{
+			title: 'Desmontaje/Montaje',
+			description:
+				'Cambiamos su carrocería de un camión a otro, realizando la configuración adecuada para que la carga quede distribuida entre ambos chasises.',
+			imageSrc: '/images/placeholder-servicio.jpg'
+		},
+		{
+			title: 'Mantenimiento',
+			description:
+				'Mantenemos su carrocería en óptimas condiciones para reducir costos y evitar que sea desechada por daños no atendidos a tiempo.',
+			imageSrc: '/images/placeholder-servicio.jpg'
+		},
+		{
+			title: 'Ingeniería',
+			description:
+				'Analizamos si su camión es el adecuado para el volumen de carga requerido en su operación de trabajo.',
+			imageSrc: '/images/placeholder-servicio.jpg'
+		},
+		{
+			title: 'Postventa',
+			description:
+				'Brindamos apoyo posterior con mantenimientos, reparación, refaccionamiento, consulta telefónica y asistencia vial cuando se requiera.',
+			imageSrc: '/images/placeholder-servicio.jpg'
 		}
 	];
 </script>
