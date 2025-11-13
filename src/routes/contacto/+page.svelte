@@ -47,58 +47,58 @@
 				<h3 class="text-w7 font-semibold text-black-primary mb-4">DATOS PERSONALES</h3>
 				<!-- Primera fila: NOMBRE, CORREO, TELÉFONO -->
 				<div class="grid grid-cols-3 gap-6">
-					<div class="flex items-center gap-4">
-						<label for="nombre" class="text-w5 text-gray-700 whitespace-nowrap">
-							NOMBRE <span class="text-red-dark">*</span>
+					<div class="flex items-center text-w4 gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
+						<label for="nombre" class=" text-red-dark font-semibold whitespace-nowrap">
+							NOMBRE
 						</label>
 						<input
 							type="text"
 							id="nombre"
 							bind:value={formData.nombre}
 							required
-							placeholder="obligatorio"
-							class="flex-1 px-4 py-3 border border-gray-300 rounded-lg text-w5 focus:outline-none focus:ring-2 focus:ring-red-dark"
+							placeholder="OBLIGATORIO"
+							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5"
 						/>
 					</div>
-					<div class="flex items-center gap-4">
-						<label for="correo" class="text-w5 text-gray-700 whitespace-nowrap">
-							CORREO <span class="text-red-dark">*</span>
+					<div class="flex items-center text-w4 gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
+						<label for="correo" class="text-red-dark font-semibold whitespace-nowrap">
+							CORREO
 						</label>
 						<input
 							type="email"
 							id="correo"
 							bind:value={formData.correo}
 							required
-							placeholder="obligatorio"
-							class="flex-1 px-4 py-3 border border-gray-300 rounded-lg text-w5 focus:outline-none focus:ring-2 focus:ring-red-dark"
+							placeholder="OBLIGATORIO"
+							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5"
 						/>
 					</div>
-					<div class="flex items-center gap-4">
-						<label for="telefono" class="text-w5 text-gray-700 whitespace-nowrap">
-							TELÉFONO <span class="text-red-dark">*</span>
+					<div class="flex items-center text-w4 gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
+						<label for="telefono" class="text-red-dark font-semibold whitespace-nowrap">
+							TELÉFONO
 						</label>
 						<input
 							type="tel"
 							id="telefono"
 							bind:value={formData.telefono}
 							required
-							placeholder="obligatorio"
-							class="flex-1 px-4 py-3 border border-gray-300 rounded-lg text-w5 focus:outline-none focus:ring-2 focus:ring-red-dark"
+							placeholder="OBLIGATORIO"
+							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5"
 						/>
 					</div>
 				</div>
 				<!-- Segunda fila: EMPRESA (2 columnas) -->
 				<div class="grid grid-cols-3 gap-6">
-					<div class="flex items-center gap-4 col-span-2">
-						<label for="empresa" class="text-w5 text-gray-700 whitespace-nowrap">
+					<div class="flex items-center text-w4 gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min col-span-2">
+						<label for="empresa" class="text-red-dark font-semibold whitespace-nowrap">
 							EMPRESA/RAZÓN SOCIAL
 						</label>
 						<input
 							type="text"
 							id="empresa"
 							bind:value={formData.empresa}
-							placeholder="opcional"
-							class="flex-1 px-4 py-3 border border-gray-300 rounded-lg text-w5 focus:outline-none focus:ring-2 focus:ring-red-dark"
+							placeholder="OPCIONAL"
+							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5"
 						/>
 					</div>
 				</div>
@@ -111,43 +111,43 @@
 				<!-- PRODUCTO -->
 				<div class="space-y-4 mb-6">
 					<h4 class="text-w6 font-semibold text-black-primary">PRODUCTO</h4>
-					<div class="grid grid-cols-3 gap-6">
-						<div class="flex items-center gap-4">
-							<label for="producto" class="text-w5 text-gray-700 whitespace-nowrap">
+					<div class="grid grid-cols-3 gap-6 text-w4">
+						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
+							<label for="producto" class="text-red-dark font-semibold whitespace-nowrap">
 								PRODUCTO
 							</label>
 							<input
 								type="text"
 								id="producto"
 								bind:value={formData.producto}
-								placeholder="opcional"
-								class="flex-1 px-4 py-3 border border-gray-300 rounded-lg text-w5 focus:outline-none focus:ring-2 focus:ring-red-dark"
+								placeholder="OPCIONAL"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5"
 							/>
 						</div>
-						<div class="flex items-center gap-4">
-							<label for="tipoProducto" class="text-w5 text-gray-700 whitespace-nowrap">
+						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
+							<label for="tipoProducto" class="text-red-dark font-semibold whitespace-nowrap">
 								TIPO DE PRODUCTO
 							</label>
 							<select
 								id="tipoProducto"
 								bind:value={formData.tipoProducto}
-								class="flex-1 px-4 py-3 border border-gray-300 rounded-lg text-w5 focus:outline-none focus:ring-2 focus:ring-red-dark"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5"
 							>
 								<option value="">ELIGE UNA OPCIÓN</option>
 								<option value="opcion1">Opción 1</option>
 								<option value="opcion2">Opción 2</option>
 							</select>
 						</div>
-						<div class="flex items-center gap-4">
-							<label for="marca" class="text-w5 text-gray-700 whitespace-nowrap">
+						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
+							<label for="marca" class="text-red-dark font-semibold whitespace-nowrap">
 								MARCA
 							</label>
 							<input
 								type="text"
 								id="marca"
 								bind:value={formData.marca}
-								placeholder="opcional"
-								class="flex-1 px-4 py-3 border border-gray-300 rounded-lg text-w5 focus:outline-none focus:ring-2 focus:ring-red-dark"
+								placeholder="OPCIONAL"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5"
 							/>
 						</div>
 					</div>
@@ -156,41 +156,41 @@
 				<!-- MEDIDAS -->
 				<div class="space-y-4 mb-6">
 					<h4 class="text-w6 font-semibold text-black-primary">MEDIDAS</h4>
-					<div class="grid grid-cols-3 gap-6">
-						<div class="flex items-center gap-4">
-							<label for="largoExterior" class="text-w5 text-gray-700 whitespace-nowrap">
+					<div class="grid grid-cols-3 gap-6 text-w4">
+						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
+							<label for="largoExterior" class="text-red-dark font-semibold whitespace-nowrap">
 								LARGO EXTERIOR
 							</label>
 							<input
 								type="text"
 								id="largoExterior"
 								bind:value={formData.largoExterior}
-								placeholder="opcional"
-								class="flex-1 px-4 py-3 border border-gray-300 rounded-lg text-w5 focus:outline-none focus:ring-2 focus:ring-red-dark"
+								placeholder="OPCIONAL"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5"
 							/>
 						</div>
-						<div class="flex items-center gap-4">
-							<label for="altoExterior" class="text-w5 text-gray-700 whitespace-nowrap">
+						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
+							<label for="altoExterior" class="text-red-dark font-semibold whitespace-nowrap">
 								ALTO EXTERIOR
 							</label>
 							<input
 								type="text"
 								id="altoExterior"
 								bind:value={formData.altoExterior}
-								placeholder="opcional"
-								class="flex-1 px-4 py-3 border border-gray-300 rounded-lg text-w5 focus:outline-none focus:ring-2 focus:ring-red-dark"
+								placeholder="OPCIONAL"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5"
 							/>
 						</div>
-						<div class="flex items-center gap-4">
-							<label for="anchoExterior" class="text-w5 text-gray-700 whitespace-nowrap">
+						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
+							<label for="anchoExterior" class="text-red-dark font-semibold whitespace-nowrap">
 								ANCHO EXTERIOR
 							</label>
 							<input
 								type="text"
 								id="anchoExterior"
 								bind:value={formData.anchoExterior}
-								placeholder="opcional"
-								class="flex-1 px-4 py-3 border border-gray-300 rounded-lg text-w5 focus:outline-none focus:ring-2 focus:ring-red-dark"
+								placeholder="OPCIONAL"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5"
 							/>
 						</div>
 					</div>
@@ -199,29 +199,29 @@
 				<!-- SERVICIO A COTIZAR -->
 				<div class="space-y-4">
 					<h4 class="text-w6 font-semibold text-black-primary">SERVICIO A COTIZAR</h4>
-					<div class="grid grid-cols-3 gap-6">
-						<div class="flex items-center gap-4">
-							<label for="reparacion" class="text-w5 text-gray-700 whitespace-nowrap">
+					<div class="grid grid-cols-3 gap-6 text-w4">
+						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
+							<label for="reparacion" class="text-red-dark font-semibold whitespace-nowrap">
 								REPARACIÓN
 							</label>
 							<select
 								id="reparacion"
 								bind:value={formData.reparacion}
-								class="flex-1 px-4 py-3 border border-gray-300 rounded-lg text-w5 focus:outline-none focus:ring-2 focus:ring-red-dark"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5"
 							>
 								<option value="">ELIGE UNA OPCIÓN</option>
 								<option value="opcion1">Opción 1</option>
 								<option value="opcion2">Opción 2</option>
 							</select>
 						</div>
-						<div class="flex items-center gap-4">
-							<label for="carrocerias" class="text-w5 text-gray-700 whitespace-nowrap">
+						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
+							<label for="carrocerias" class="text-red-dark font-semibold whitespace-nowrap">
 								CARROCERÍAS
 							</label>
 							<select
 								id="carrocerias"
 								bind:value={formData.carrocerias}
-								class="flex-1 px-4 py-3 border border-gray-300 rounded-lg text-w5 focus:outline-none focus:ring-2 focus:ring-red-dark"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5"
 							>
 								<option value="">ELIGE UNA OPCIÓN</option>
 								<option value="opcion1">Opción 1</option>
@@ -235,13 +235,16 @@
 			<!-- MENSAJE ADICIONAL -->
 			<div class="space-y-4">
 				<h3 class="text-w7 font-semibold text-black-primary mb-4">MENSAJE ADICIONAL</h3>
-				<textarea
-					id="mensaje"
-					bind:value={formData.mensaje}
-					rows="4"
-					placeholder="DINOS LO QUE ESTÁS BUSCANDO..."
-					class="w-full px-4 py-3 border border-gray-300 rounded-lg text-w5 focus:outline-none focus:ring-2 focus:ring-red-dark"
-				></textarea>
+				<div class="bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] ">
+					
+					<textarea
+						id="mensaje"
+						bind:value={formData.mensaje}
+						rows="4"
+						placeholder="DINOS LO QUE ESTÁS BUSCANDO..."
+						class="w-full border-none focus:outline-none bg-inherit rounded-tr-[2cqw] rounded-bl-[2cqw] py-1.5"
+					></textarea>
+				</div>
 			</div>
 
 			<!-- Submit Button -->
