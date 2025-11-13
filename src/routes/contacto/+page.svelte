@@ -57,7 +57,7 @@
 							bind:value={formData.nombre}
 							required
 							placeholder="OBLIGATORIO"
-							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5"
+							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
 						/>
 					</div>
 					<div class="flex items-center text-w4 gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
@@ -70,7 +70,7 @@
 							bind:value={formData.correo}
 							required
 							placeholder="OBLIGATORIO"
-							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5"
+							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
 						/>
 					</div>
 					<div class="flex items-center text-w4 gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
@@ -83,7 +83,7 @@
 							bind:value={formData.telefono}
 							required
 							placeholder="OBLIGATORIO"
-							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5"
+							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
 						/>
 					</div>
 				</div>
@@ -98,7 +98,7 @@
 							id="empresa"
 							bind:value={formData.empresa}
 							placeholder="OPCIONAL"
-							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5"
+							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
 						/>
 					</div>
 				</div>
@@ -121,7 +121,7 @@
 								id="producto"
 								bind:value={formData.producto}
 								placeholder="OPCIONAL"
-								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
 							/>
 						</div>
 						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
@@ -131,7 +131,7 @@
 							<select
 								id="tipoProducto"
 								bind:value={formData.tipoProducto}
-								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5 text-w4"
 							>
 								<option value="">ELIGE UNA OPCIÓN</option>
 								<option value="opcion1">Opción 1</option>
@@ -147,7 +147,7 @@
 								id="marca"
 								bind:value={formData.marca}
 								placeholder="OPCIONAL"
-								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
 							/>
 						</div>
 					</div>
@@ -166,7 +166,7 @@
 								id="largoExterior"
 								bind:value={formData.largoExterior}
 								placeholder="OPCIONAL"
-								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
 							/>
 						</div>
 						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
@@ -178,7 +178,7 @@
 								id="altoExterior"
 								bind:value={formData.altoExterior}
 								placeholder="OPCIONAL"
-								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
 							/>
 						</div>
 						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
@@ -190,7 +190,7 @@
 								id="anchoExterior"
 								bind:value={formData.anchoExterior}
 								placeholder="OPCIONAL"
-								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
 							/>
 						</div>
 					</div>
@@ -207,7 +207,7 @@
 							<select
 								id="reparacion"
 								bind:value={formData.reparacion}
-								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5 text-w4"
 							>
 								<option value="">ELIGE UNA OPCIÓN</option>
 								<option value="opcion1">Opción 1</option>
@@ -221,7 +221,7 @@
 							<select
 								id="carrocerias"
 								bind:value={formData.carrocerias}
-								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5 text-w4"
 							>
 								<option value="">ELIGE UNA OPCIÓN</option>
 								<option value="opcion1">Opción 1</option>
@@ -242,7 +242,7 @@
 						bind:value={formData.mensaje}
 						rows="4"
 						placeholder="DINOS LO QUE ESTÁS BUSCANDO..."
-						class="w-full border-none focus:outline-none bg-inherit rounded-tr-[2cqw] rounded-bl-[2cqw] py-1.5"
+						class="w-full border-none focus:outline-none bg-inherit rounded-tr-[2cqw] rounded-bl-[2cqw] py-1.5 text-w4"
 					></textarea>
 				</div>
 			</div>
