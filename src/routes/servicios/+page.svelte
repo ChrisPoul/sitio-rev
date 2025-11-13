@@ -154,7 +154,7 @@ const services = [
 </section>
 
 <div class="flex justify-center my-24">
-    <Button variant="primary" textSize="5xl" class="px-20 py-5">
+    <Button variant="primary" textSize="5xl" class="px-20">
         HABLEMOS DE TU PROYECTO
     </Button>
 </div>
