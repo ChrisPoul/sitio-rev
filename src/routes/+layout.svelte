@@ -11,5 +11,5 @@
 </svelte:head>
 
 <Navbar />
-<main class="leading-tight">{@render children()}</main>
+<main class="leading-tight text-w5">{@render children()}</main>
 <div class="w-full h-24 bg-red-dark"></div>

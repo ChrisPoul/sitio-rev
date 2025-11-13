@@ -39,7 +39,7 @@
 </MainBanner>
 
 <!-- Contact Form Section -->
-<section class="py-16 px-40">
+<section class="pt-16 px-main">
 	<Card rounded="partial" border class="p-16">
 		<form onsubmit={handleSubmit} class="space-y-8">
 			<!-- DATOS PERSONALES -->
@@ -257,4 +257,9 @@
 	</Card>
 </section>
 
+<div>
+	<h1 class="text-w18 font-bold text-red-dark text-center py-14">
+		¡VISÍTANOS!
+	</h1>
+</div>
 <ContactInfo />

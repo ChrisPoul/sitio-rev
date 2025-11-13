@@ -181,25 +181,23 @@
 </section>
 
 <!-- Final CTA Section -->
-<section class="relative w-full min-h-[600px] bg-black flex items-center justify-center">
+<section class="relative w-full flex items-center justify-center">
 	<!-- Background Image -->
 	<img
 		src="/3.png"
 		alt=""
-		class="absolute inset-0 w-full h-full object-cover"
+		class="w-full h-auto"
 	/>
-	<!-- Content -->
-	<div class="relative z-10 flex flex-col items-center mt-32">
-		<h2
-			class="bg-red-dark text-white-primary px-[10%] py-[4%] text-nowrap text-w10 font-bold rounded-tr-full rounded-bl-full mb-6"
-		>
-			Estamos listos para trabajar contigo
-		</h2>
-		<Button href="/contacto" variant="primary" textSize="3xl" class="px-[10%]">
-			COTIZA AHORA
-		</Button>
-	</div>
+	<h2
+		class="absolute bottom-10 left-1/2 -translate-x-1/2 bg-red-dark text-white-primary px-22 leading-none py-7 text-nowrap text-w11 font-bold rounded-tr-full rounded-bl-full"
+	>
+		Estamos listos para trabajar contigo
+	</h2>
 </section>
-
+<div class="flex justify-center my-20">
+	<Button href="/contacto" variant="primary" textSize="3xl" class="px-36">
+		COTIZA AHORA
+	</Button>
+</div>
 <!-- Contact Info Section -->
 <ContactInfo />

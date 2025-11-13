@@ -21,8 +21,14 @@
 	--text-w9: 2.25cqw;
 	--text-w10: 2.5cqw;
 	--text-w11: 2.75cqw;
-
-	--spacing-main: 4cqw
+	--text-w12: 3cqw;
+	--text-w13: 3.25cqw;
+	--text-w14: 3.5cqw;
+	--text-w15: 3.75cqw;
+	--text-w16: 4cqw;
+	--text-w17: 4.25cqw;
+	--text-w18: 4.5cqw;
+	--spacing-main: 8cqw;
 }
 
 p {

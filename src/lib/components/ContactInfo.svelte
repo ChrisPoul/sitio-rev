@@ -3,16 +3,16 @@
 	import Button from '$lib/components/Button.svelte';
 </script>
 
-<section class="p-24">
-	<div class="container mx-auto px-8">
-		<div class="max-w-6xl mx-auto">
+<section class="px-main mb-20">
+	<div class="container mx-auto">
+		<div>
 			<div class="grid grid-cols-10">
 				<!-- Map Left -->
 				<div class="relative col-span-4">
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14938.961547019975!2d-100.4044288!3d20.598657049999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35ace3875a309%3A0x7e2ee867dcd3fedf!2sSERVICIO%20%22%20LA%20HORMIGA%20%22!5e0!3m2!1sen!2smx!4v1762263194161!5m2!1sen!2smx"
-						class="w-full h-full rounded-lg border-0"
-						allowfullscreen=""
+						class="w-full h-full"
+						title="Mapa de la empresa"
 						loading="lazy"
 						referrerpolicy="no-referrer-when-downgrade"
 					></iframe>
