@@ -41,7 +41,7 @@ desarrollo de cada producto entregado a usted.
 </div>
 
 <div class="flex justify-center my-16">
-	<Button variant="primary" textSize="3xl">
+	<Button variant="primary" textSize="3xl" href="/servicios">
 		DESCUBRE CÓMO PODEMOS AYUDARTE
 	</Button>
 </div>

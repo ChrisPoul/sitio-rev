@@ -81,11 +81,11 @@
 	<div class="mx-auto px-8">
 		<div class="flex justify-center">
 			<video
-				class="w-full max-w-4xl min-h-96"
+				class="w-full max-w-4xl h-auto"
 				controls
-				poster="/images/video-poster.jpg"
 			>
-				<source src="/videos/conoce-3g.mp4" type="video/mp4" />
+				<source src="/Carrocerias3G-final.mov" type="video/quicktime" />
+				<source src="/Carrocerias3G-final.mov" type="video/mp4" />
 				Tu navegador no soporta el elemento de video.
 			</video>
 		</div>
@@ -163,7 +163,7 @@
 					Contamos con servicios adicionales que prolongan la vida útil de tus
 					carrocerías
 				</p>
-				<Button variant="primary" textSize="lg">
+				<Button variant="primary" textSize="lg" href="/servicios">
 					ALARGA LA VIDA DE TUS CARROCERÍAS
 				</Button>
 			</div>

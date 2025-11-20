@@ -114,7 +114,7 @@ const services = [
     </section>
 
     <div class="flex justify-center my-16">
-        <Button variant="primary" textSize="3xl" class="px-20">
+        <Button variant="primary" textSize="3xl" class="px-20" href="/contacto">
             SOLICITA TU COTIZACIÓN
         </Button>
     </div>
@@ -154,7 +154,7 @@ const services = [
 </section>
 
 <div class="flex justify-center my-24">
-    <Button variant="primary" textSize="5xl" class="px-20">
+    <Button variant="primary" textSize="5xl" class="px-20" href="/contacto">
         HABLEMOS DE TU PROYECTO
     </Button>
 </div>
