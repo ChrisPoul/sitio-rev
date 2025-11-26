@@ -16,10 +16,16 @@
 </MainBanner>
 
 <div class="mx-30 mb-20">
-	<video controls class="w-full min-h-200 rounded-lg">
-		<source src="/videos/nosotros.mp4" type="video/mp4" />
-		Your browser does not support the video tag.
-	</video>
+	<div class="flex justify-center">
+		<video
+			class="w-full max-w-4xl h-auto"
+			controls
+		>
+			<source src="/Carrocerias3G-final.mov" type="video/quicktime" />
+			<source src="/Carrocerias3G-final.mov" type="video/mp4" />
+			Tu navegador no soporta el elemento de video.
+		</video>
+	</div>
 </div>
 
 <div class="flex flex-col gap-8">
