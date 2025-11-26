@@ -31,5 +31,8 @@
 		"svelte": "^5.41.0",
 		"tailwindcss": "^4.1.14",
 		"vite": "^7.1.10"
+	},
+	"dependencies": {
+		"resend": "^6.5.2"
 	}
 }

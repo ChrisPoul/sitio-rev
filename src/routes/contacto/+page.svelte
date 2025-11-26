@@ -3,6 +3,7 @@
 	import Card from '$lib/components/Card.svelte';
 	import Button from '$lib/components/Button.svelte';
 	import ContactInfo from '$lib/components/ContactInfo.svelte';
+	import { enhance } from '$app/forms';
 
 	let formData = $state({
 		tipoProducto: '',
@@ -21,9 +22,34 @@
 		carrocerias: ''
 	});
 
-	function handleSubmit() {
-		// TODO: Implement form submission
-		console.log('Form submitted:', formData);
+	let submitting = $state(false);
+	let result = $state(null);
+
+	function handleResult(event) {
+		const { result: formResult } = event.detail;
+		if (formResult.type === 'success') {
+			result = { success: true, message: formResult.data?.message || '¡Formulario enviado exitosamente!' };
+			// Reset form
+			formData = {
+				tipoProducto: '',
+				marca: '',
+				empresa: '',
+				nombre: '',
+				correo: '',
+				telefono: '',
+				producto: '',
+				servicioCotizar: '',
+				largoExterior: '',
+				altoExterior: '',
+				anchoExterior: '',
+				mensaje: '',
+				reparacion: '',
+				carrocerias: ''
+			};
+		} else if (formResult.type === 'failure') {
+			result = { success: false, message: formResult.data?.error || 'Error al enviar el formulario' };
+		}
+		submitting = false;
 	}
 </script>
 
@@ -41,7 +67,27 @@
 <!-- Contact Form Section -->
 <section class="pt-16 px-main">
 	<Card rounded="partial" border class="p-16">
-		<form onsubmit={handleSubmit} class="space-y-8">
+		{#if result}
+			<div
+				class="mb-6 p-4 rounded-tr-[2cqw] rounded-bl-[2cqw] {result.success
+					? 'bg-green-100 text-green-800 border border-green-300'
+					: 'bg-red-100 text-red-800 border border-red-300'}"
+			>
+				<p class="text-w5 font-semibold">{result.message}</p>
+			</div>
+		{/if}
+		<form
+			method="POST"
+			use:enhance={({ formData }) => {
+				submitting = true;
+				result = null;
+				return async ({ result: formResult, update }) => {
+					handleResult({ detail: { result: formResult } });
+					await update();
+				};
+			}}
+			class="space-y-8"
+		>
 			<!-- DATOS PERSONALES -->
 			<div class="space-y-4">
 				<h3 class="text-w7 font-semibold text-black-primary mb-4">DATOS PERSONALES</h3>
@@ -54,6 +100,7 @@
 						<input
 							type="text"
 							id="nombre"
+							name="nombre"
 							bind:value={formData.nombre}
 							required
 							placeholder="OBLIGATORIO"
@@ -67,6 +114,7 @@
 						<input
 							type="email"
 							id="correo"
+							name="correo"
 							bind:value={formData.correo}
 							required
 							placeholder="OBLIGATORIO"
@@ -80,6 +128,7 @@
 						<input
 							type="tel"
 							id="telefono"
+							name="telefono"
 							bind:value={formData.telefono}
 							required
 							placeholder="OBLIGATORIO"
@@ -96,6 +145,7 @@
 						<input
 							type="text"
 							id="empresa"
+							name="empresa"
 							bind:value={formData.empresa}
 							placeholder="OPCIONAL"
 							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
@@ -119,6 +169,7 @@
 							<input
 								type="text"
 								id="producto"
+								name="producto"
 								bind:value={formData.producto}
 								placeholder="OPCIONAL"
 								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
@@ -130,6 +181,7 @@
 							</label>
 							<select
 								id="tipoProducto"
+								name="tipoProducto"
 								bind:value={formData.tipoProducto}
 								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5 text-w4"
 							>
@@ -145,6 +197,7 @@
 							<input
 								type="text"
 								id="marca"
+								name="marca"
 								bind:value={formData.marca}
 								placeholder="OPCIONAL"
 								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
@@ -164,6 +217,7 @@
 							<input
 								type="text"
 								id="largoExterior"
+								name="largoExterior"
 								bind:value={formData.largoExterior}
 								placeholder="OPCIONAL"
 								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
@@ -176,6 +230,7 @@
 							<input
 								type="text"
 								id="altoExterior"
+								name="altoExterior"
 								bind:value={formData.altoExterior}
 								placeholder="OPCIONAL"
 								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
@@ -188,6 +243,7 @@
 							<input
 								type="text"
 								id="anchoExterior"
+								name="anchoExterior"
 								bind:value={formData.anchoExterior}
 								placeholder="OPCIONAL"
 								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
@@ -206,6 +262,7 @@
 							</label>
 							<select
 								id="reparacion"
+								name="reparacion"
 								bind:value={formData.reparacion}
 								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5 text-w4"
 							>
@@ -220,6 +277,7 @@
 							</label>
 							<select
 								id="carrocerias"
+								name="carrocerias"
 								bind:value={formData.carrocerias}
 								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5 text-w4"
 							>
@@ -239,6 +297,7 @@
 					
 					<textarea
 						id="mensaje"
+						name="mensaje"
 						bind:value={formData.mensaje}
 						rows="4"
 						placeholder="DINOS LO QUE ESTÁS BUSCANDO..."
@@ -249,8 +308,8 @@
 
 			<!-- Submit Button -->
 			<div class="flex justify-end pt-6">
-				<Button type="submit" variant="primary" textSize="xl">
-					ENVIAR
+				<Button type="submit" variant="primary" textSize="xl" disabled={submitting}>
+					{submitting ? 'ENVIANDO...' : 'ENVIAR'}
 				</Button>
 			</div>
 		</form>
