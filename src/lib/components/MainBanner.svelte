@@ -21,7 +21,7 @@
 	<!-- Title Overlay -->
 	<div class="absolute {positionClasses[position]}">
 		<div class="bg-red-dark text-white-primary min-w-200 px-30 py-6 {roundedClasses[position]}">
-			<h1 class="text-w11">
+			<h1 class="text-w11 leading-none">
 				{@render title()}
 			</h1>
 		</div>
