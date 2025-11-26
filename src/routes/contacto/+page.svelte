@@ -67,15 +67,6 @@
 <!-- Contact Form Section -->
 <section class="pt-16 px-main">
 	<Card rounded="partial" border class="p-16">
-		{#if result}
-			<div
-				class="mb-6 p-4 rounded-tr-[2cqw] rounded-bl-[2cqw] {result.success
-					? 'bg-green-100 text-green-800 border border-green-300'
-					: 'bg-red-100 text-red-800 border border-red-300'}"
-			>
-				<p class="text-w5 font-semibold">{result.message}</p>
-			</div>
-		{/if}
 		<form
 			method="POST"
 			use:enhance={({ formData }) => {
@@ -104,7 +95,7 @@
 							bind:value={formData.nombre}
 							required
 							placeholder="OBLIGATORIO"
-							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
+							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4 w-full"
 						/>
 					</div>
 					<div class="flex items-center text-w4 gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
@@ -118,7 +109,7 @@
 							bind:value={formData.correo}
 							required
 							placeholder="OBLIGATORIO"
-							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
+							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4 w-full"
 						/>
 					</div>
 					<div class="flex items-center text-w4 gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
@@ -132,7 +123,7 @@
 							bind:value={formData.telefono}
 							required
 							placeholder="OBLIGATORIO"
-							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
+							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4 w-full"
 						/>
 					</div>
 				</div>
@@ -148,7 +139,7 @@
 							name="empresa"
 							bind:value={formData.empresa}
 							placeholder="OPCIONAL"
-							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
+							class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4 w-full"
 						/>
 					</div>
 				</div>
@@ -172,7 +163,7 @@
 								name="producto"
 								bind:value={formData.producto}
 								placeholder="OPCIONAL"
-								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4 w-full"
 							/>
 						</div>
 						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
@@ -183,7 +174,7 @@
 								id="tipoProducto"
 								name="tipoProducto"
 								bind:value={formData.tipoProducto}
-								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5 text-w4"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5 text-w4 w-full"
 							>
 								<option value="">ELIGE UNA OPCIÓN</option>
 								<option value="opcion1">Opción 1</option>
@@ -200,7 +191,7 @@
 								name="marca"
 								bind:value={formData.marca}
 								placeholder="OPCIONAL"
-								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4 w-full"
 							/>
 						</div>
 					</div>
@@ -220,7 +211,7 @@
 								name="largoExterior"
 								bind:value={formData.largoExterior}
 								placeholder="OPCIONAL"
-								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4 w-full"
 							/>
 						</div>
 						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
@@ -233,7 +224,7 @@
 								name="altoExterior"
 								bind:value={formData.altoExterior}
 								placeholder="OPCIONAL"
-								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4 w-full"
 							/>
 						</div>
 						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
@@ -246,7 +237,7 @@
 								name="anchoExterior"
 								bind:value={formData.anchoExterior}
 								placeholder="OPCIONAL"
-								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4 w-full"
 							/>
 						</div>
 					</div>
@@ -264,7 +255,7 @@
 								id="reparacion"
 								name="reparacion"
 								bind:value={formData.reparacion}
-								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5 text-w4"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5 text-w4 w-full"
 							>
 								<option value="">ELIGE UNA OPCIÓN</option>
 								<option value="opcion1">Opción 1</option>
@@ -279,7 +270,7 @@
 								id="carrocerias"
 								name="carrocerias"
 								bind:value={formData.carrocerias}
-								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5 text-w4"
+								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5 text-w4 w-full"
 							>
 								<option value="">ELIGE UNA OPCIÓN</option>
 								<option value="opcion1">Opción 1</option>
@@ -305,6 +296,17 @@
 					></textarea>
 				</div>
 			</div>
+
+			<!-- Success/Error Message -->
+			{#if result}
+				<div
+					class="mb-6 p-4 rounded-tr-[2cqw] rounded-bl-[2cqw] {result.success
+						? 'bg-green-100 text-green-800 border border-green-300'
+						: 'bg-red-100 text-red-800 border border-red-300'}"
+				>
+					<p class="text-w5 font-semibold">{result.message}</p>
+				</div>
+			{/if}
 
 			<!-- Submit Button -->
 			<div class="flex justify-end pt-6">

@@ -6,7 +6,7 @@
 </script>
 
 <!-- Main Banner -->
-<MainBanner imageSrc="/images/hero-banner.jpg">
+<MainBanner imageSrc="/B1.png">
 	{#snippet title()}
 			Más que carrocerías,<br />
 			<b>soluciones que impulsan tu operación</b>
