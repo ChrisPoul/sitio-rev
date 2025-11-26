@@ -3,6 +3,8 @@
 	import Card from '$lib/components/Card.svelte';
 	import MainBanner from '$lib/components/MainBanner.svelte';
 	import ContactInfo from '$lib/components/ContactInfo.svelte';
+	import Carousel from '$lib/components/Carousel.svelte';
+	import { services } from '$lib/data/services.js';
 </script>
 
 <!-- Main Banner -->
@@ -47,25 +49,20 @@
 		<h2 class="text-w10 font-semibold text-red-dark text-center mb-12">
 			CONOCE NUESTROS SERVICIOS
 		</h2>
-		<div class="grid grid-cols-2 gap-8 max-w-5xl mx-auto">
-			<Card rounded="partial" border class="text-center px-16 py-26">
-				<h3 class="text-w7 text-black-primary mb-3">
-					DISEÑOS PERSONALIZADOS
-				</h3>
-				<div class="w-1/2 h-0.5 bg-black-primary mx-auto my-4"></div>
-				<p class="text-gray-600 leading-relaxed text-w5">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetuer
-				</p>
-			</Card>
-			<Card rounded="partial" border class="text-center px-16 py-26">
-				<h3 class="text-w7 text-black-primary mb-3">
-					CÁLCULO VOLUMÉTRICO
-				</h3>
-				<div class="w-1/2 h-0.5 bg-black-primary mx-auto my-4"></div>
-				<p class="text-gray-600 leading-relaxed text-w5">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetuer
-				</p>
-			</Card>
+		<div class="max-w-5xl mx-auto">
+			<Carousel items={services} itemsPerView={2} autoplayDelay={5000}>
+				{#snippet renderItem({ item })}
+					<Card rounded="partial" border class="text-center px-16 py-26">
+						<h3 class="text-w7 text-black-primary mb-3">
+							{item.title}
+						</h3>
+						<div class="w-1/2 h-0.5 bg-black-primary mx-auto my-4"></div>
+						<p class="text-gray-600 leading-relaxed text-w5">
+							{item.description}
+						</p>
+					</Card>
+				{/snippet}
+			</Carousel>
 		</div>
 		<div class="text-center mt-12">
 			<Button href="/servicios" variant="primary" textSize="3xl">
