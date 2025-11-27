@@ -14,14 +14,12 @@ export const actions = {
 			correo: formData.get('correo') || '',
 			telefono: formData.get('telefono') || '',
 			empresa: formData.get('empresa') || '',
-			producto: formData.get('producto') || '',
 			tipoProducto: formData.get('tipoProducto') || '',
 			marca: formData.get('marca') || '',
 			largoExterior: formData.get('largoExterior') || '',
 			altoExterior: formData.get('altoExterior') || '',
 			anchoExterior: formData.get('anchoExterior') || '',
 			reparacion: formData.get('reparacion') || '',
-			carrocerias: formData.get('carrocerias') || '',
 			mensaje: formData.get('mensaje') || ''
 		};
 
@@ -82,21 +80,17 @@ export const actions = {
 							</div>
 						</div>
 
-						<div class="section">
-							<div class="section-title">COTIZACIÓN - PRODUCTO</div>
-							<div class="field">
-								<span class="label">Producto:</span>
-								<span class="value">${data.producto || '<span class="empty">No proporcionado</span>'}</span>
-							</div>
-							<div class="field">
-								<span class="label">Tipo de Producto:</span>
-								<span class="value">${data.tipoProducto || '<span class="empty">No proporcionado</span>'}</span>
-							</div>
-							<div class="field">
-								<span class="label">Marca:</span>
-								<span class="value">${data.marca || '<span class="empty">No proporcionado</span>'}</span>
-							</div>
+					<div class="section">
+						<div class="section-title">COTIZACIÓN - PRODUCTO</div>
+						<div class="field">
+							<span class="label">Tipo de Producto:</span>
+							<span class="value">${data.tipoProducto || '<span class="empty">No proporcionado</span>'}</span>
 						</div>
+						<div class="field">
+							<span class="label">Marca:</span>
+							<span class="value">${data.marca || '<span class="empty">No proporcionado</span>'}</span>
+						</div>
+					</div>
 
 						<div class="section">
 							<div class="section-title">MEDIDAS</div>
@@ -114,17 +108,13 @@ export const actions = {
 							</div>
 						</div>
 
-						<div class="section">
-							<div class="section-title">SERVICIO A COTIZAR</div>
-							<div class="field">
-								<span class="label">Reparación:</span>
-								<span class="value">${data.reparacion || '<span class="empty">No proporcionado</span>'}</span>
-							</div>
-							<div class="field">
-								<span class="label">Carrocerías:</span>
-								<span class="value">${data.carrocerias || '<span class="empty">No proporcionado</span>'}</span>
-							</div>
+					<div class="section">
+						<div class="section-title">SERVICIO A COTIZAR</div>
+						<div class="field">
+							<span class="label">Reparación:</span>
+							<span class="value">${data.reparacion || '<span class="empty">No proporcionado</span>'}</span>
 						</div>
+					</div>
 
 						<div class="section">
 							<div class="section-title">MENSAJE ADICIONAL</div>
@@ -149,7 +139,6 @@ Teléfono: ${data.telefono}
 Empresa/Razón Social: ${data.empresa || 'No proporcionado'}
 
 COTIZACIÓN - PRODUCTO
-Producto: ${data.producto || 'No proporcionado'}
 Tipo de Producto: ${data.tipoProducto || 'No proporcionado'}
 Marca: ${data.marca || 'No proporcionado'}
 
@@ -160,7 +149,6 @@ Ancho Exterior: ${data.anchoExterior || 'No proporcionado'}
 
 SERVICIO A COTIZAR
 Reparación: ${data.reparacion || 'No proporcionado'}
-Carrocerías: ${data.carrocerias || 'No proporcionado'}
 
 MENSAJE ADICIONAL
 ${data.mensaje || 'No hay mensaje adicional'}

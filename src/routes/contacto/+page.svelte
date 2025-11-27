@@ -12,14 +12,12 @@
 		nombre: '',
 		correo: '',
 		telefono: '',
-		producto: '',
 		servicioCotizar: '',
 		largoExterior: '',
 		altoExterior: '',
 		anchoExterior: '',
 		mensaje: '',
-		reparacion: '',
-		carrocerias: ''
+		reparacion: ''
 	});
 
 	let submitting = $state(false);
@@ -37,14 +35,12 @@
 				nombre: '',
 				correo: '',
 				telefono: '',
-				producto: '',
 				servicioCotizar: '',
 				largoExterior: '',
 				altoExterior: '',
 				anchoExterior: '',
 				mensaje: '',
-				reparacion: '',
-				carrocerias: ''
+				reparacion: ''
 			};
 		} else if (formResult.type === 'failure') {
 			result = { success: false, message: formResult.data?.error || 'Error al enviar el formulario' };
@@ -153,20 +149,7 @@
 				<div class="space-y-4 mb-6">
 					<h4 class="text-w6 font-semibold text-black-primary">PRODUCTO</h4>
 					<div class="grid grid-cols-3 gap-6 text-w4">
-						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
-							<label for="producto" class="text-red-dark font-semibold whitespace-nowrap">
-								PRODUCTO
-							</label>
-							<input
-								type="text"
-								id="producto"
-								name="producto"
-								bind:value={formData.producto}
-								placeholder="OPCIONAL"
-								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 text-w4 w-full"
-							/>
-						</div>
-						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
+						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min col-span-2">
 							<label for="tipoProducto" class="text-red-dark font-semibold whitespace-nowrap">
 								TIPO DE PRODUCTO
 							</label>
@@ -181,7 +164,7 @@
 								<option value="opcion2">Opción 2</option>
 							</select>
 						</div>
-						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
+						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min col-span-1">
 							<label for="marca" class="text-red-dark font-semibold whitespace-nowrap">
 								MARCA
 							</label>
@@ -247,7 +230,7 @@
 				<div class="space-y-4">
 					<h4 class="text-w6 font-semibold text-black-primary">SERVICIO A COTIZAR</h4>
 					<div class="grid grid-cols-3 gap-6 text-w4">
-						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
+						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min col-span-2">
 							<label for="reparacion" class="text-red-dark font-semibold whitespace-nowrap">
 								REPARACIÓN
 							</label>
@@ -255,21 +238,6 @@
 								id="reparacion"
 								name="reparacion"
 								bind:value={formData.reparacion}
-								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5 text-w4 w-full"
-							>
-								<option value="">ELIGE UNA OPCIÓN</option>
-								<option value="opcion1">Opción 1</option>
-								<option value="opcion2">Opción 2</option>
-							</select>
-						</div>
-						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min">
-							<label for="carrocerias" class="text-red-dark font-semibold whitespace-nowrap">
-								CARROCERÍAS
-							</label>
-							<select
-								id="carrocerias"
-								name="carrocerias"
-								bind:value={formData.carrocerias}
 								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5 text-w4 w-full"
 							>
 								<option value="">ELIGE UNA OPCIÓN</option>
