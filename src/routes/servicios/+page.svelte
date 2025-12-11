@@ -9,49 +9,49 @@
 			title: 'Diagnóstico',
 			description:
 				'Realizamos diagnóstico de su carrocería para validar si la unidad es apta para reintroducirse al trabajo diario o requiere servicio de reparación o mantenimiento.',
-			imageSrc: '/images/placeholder-servicio.jpg'
+			imageSrc: '/servicios/diagnostico.jpg'
 		},
 		{
 			title: 'Rehabilitado',
 			description:
 				'Rehabilitamos unidades que están por salir del parque vehicular para su reingreso y que puedan volver al trabajo diario.',
-			imageSrc: '/images/placeholder-servicio.jpg'
+			imageSrc: '/servicios/rehabilitado.jpg'
 		},
 		{
 			title: 'Reparación',
 			description:
 				'Reparamos o fabricamos elementos que conforman la carrocería en general, como marco posterior, paneles, toldo, puertas cortina o abatibles, rampas y más.',
-			imageSrc: '/images/placeholder-servicio.jpg'
+			imageSrc: '/servicios/reparacion.jpg'
 		},
 		{
 			title: 'Refaccionamiento',
 			description:
 				'Suministramos refacciones y accesorios para que sus unidades no se detengan y estén adecuadas para cada ruta.',
-			imageSrc: '/images/placeholder-servicio.jpg'
+			imageSrc: '/servicios/refaccionamiento.jpg'
 		},
 		{
 			title: 'Desmontaje/Montaje',
 			description:
 				'Cambiamos su carrocería de un camión a otro, realizando la configuración adecuada para que la carga quede distribuida entre ambos chasises.',
-			imageSrc: '/images/placeholder-servicio.jpg'
+			imageSrc: '/servicios/montaje.jpg'
 		},
 		{
 			title: 'Mantenimiento',
 			description:
 				'Mantenemos su carrocería en óptimas condiciones para reducir costos y evitar que sea desechada por daños no atendidos a tiempo.',
-			imageSrc: '/images/placeholder-servicio.jpg'
+			imageSrc: '/servicios/mantenimiento.jpg'
 		},
 		{
 			title: 'Ingeniería',
 			description:
 				'Analizamos si su camión es el adecuado para el volumen de carga requerido en su operación de trabajo.',
-			imageSrc: '/images/placeholder-servicio.jpg'
+			imageSrc: '/servicios/ingenieria.jpg'
 		},
 		{
 			title: 'Postventa',
 			description:
 				'Brindamos apoyo posterior con mantenimientos, reparación, refaccionamiento, consulta telefónica y asistencia vial cuando se requiera.',
-			imageSrc: '/images/placeholder-servicio.jpg'
+			imageSrc: '/servicios/post-venta.jpg'
 		}
 	];
 </script>
