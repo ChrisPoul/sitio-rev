@@ -10,8 +10,10 @@
 		suman valor a tu inversión
 	{/snippet}
     {#snippet paragraph()}
-    En CARROCERIAS 3G S.A. DE C.V. desarrollamos productos para la industria <br />
-    del transporte, los cuales son carrocerías sobre chasís fijas y desmontables.
+    En Carrocerías 3G desarrollamos y fabricamos carrocerías para el transporte de carga, 
+	vendemos e instalamos equipo aliado y accesorios, mediante procesos y tecnología de 
+	vanguardia y de calidad, con un enfoque de satisfacción total al cliente, el cumplimiento 
+	normativo y el desarrollo de nuestros colaboradores.
     {/snippet}
 </MainBanner>
 
