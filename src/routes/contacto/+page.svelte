@@ -50,7 +50,7 @@
 </script>
 
 <!-- Main Banner -->
-<MainBanner imageSrc="/6.png" position="left">
+<MainBanner imageSrc="/NUEVA.png" position="left">
 	{#snippet title()}
 		Estamos listos para<br />
 		<b>trabajar contigo</b>

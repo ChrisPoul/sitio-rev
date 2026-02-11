@@ -181,7 +181,7 @@
 <section class="relative w-full flex items-center justify-center">
 	<!-- Background Image -->
 	<img
-		src="/3.png"
+		src="/NUEVA.png"
 		alt=""
 		class="w-full h-auto"
 	/>
