@@ -3,7 +3,7 @@
 @plugin '@tailwindcss/typography';
 
 @theme {
-	--color-red-dark: #b91c1c;
+	--color-red-dark: #991a1a;
 	--color-red-light: #ef4444;
 	--color-gray-light: #f3f4f6;
 	--color-white-primary: #ffffff;
