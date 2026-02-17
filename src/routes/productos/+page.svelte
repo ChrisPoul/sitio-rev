@@ -37,13 +37,9 @@
 					category.image ??
 					`/productos/${categoryToImageSlug(category.title)}.jpg`}
 				align={i % 2 === 0 ? 'left' : 'right'}
+				categorySlug={categoryToImageSlug(category.title)}
 			/>
 		{/each}
 	</div>
 </div>
 
-<div class="flex justify-center my-24">
-	<Button variant="primary" textSize="3xl" class="px-20" href="/contacto">
-		COTIZA TU PROYECTO
-	</Button>
-</div>

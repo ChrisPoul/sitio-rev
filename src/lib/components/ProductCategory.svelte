@@ -6,8 +6,18 @@
 		description,
 		products = [],
 		imageSrc,
-		align = 'left'
+		align = 'left',
+		categorySlug = null
 	} = $props();
+
+	function toSlug(text) {
+		return text
+			.toLowerCase()
+			.normalize('NFD')
+			.replace(/\p{Diacritic}/gu, '')
+			.replace(/[/\s]+/g, '-')
+			.replace(/[^a-z0-9-]/g, '');
+	}
 </script>
 
 <div
@@ -31,13 +41,24 @@
 		<p class="text-w7  mb-6 leading-relaxed">{description}</p>
 		<div class="grid grid-cols-2 gap-4 w-full max-w-md">
 			{#each products as product}
-				<div
-					class="bg-red-dark text-white-primary px-5 py-3 rounded-tr-[2cqw] text-w5 font-bold text-center flex items-center justify-center {products.length === 1
-						? 'col-span-2'
-						: ''}"
-				>
-					{product.name}
-				</div>
+				{#if categorySlug}
+					<a
+						href="/galeria#{categorySlug}--{toSlug(product.name)}"
+						class="bg-red-dark text-white-primary px-5 py-3 rounded-tr-[2cqw] text-w5 font-bold text-center flex items-center justify-center hover:opacity-90 transition-opacity {products.length === 1
+							? 'col-span-2'
+							: ''}"
+					>
+						{product.name}
+					</a>
+				{:else}
+					<div
+						class="bg-red-dark text-white-primary px-5 py-3 rounded-tr-[2cqw] text-w5 font-bold text-center flex items-center justify-center {products.length === 1
+							? 'col-span-2'
+							: ''}"
+					>
+						{product.name}
+					</div>
+				{/if}
 			{/each}
 		</div>
 	</div>
