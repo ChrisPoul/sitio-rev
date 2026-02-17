@@ -44,7 +44,7 @@
 			<h2 class="text-w10 font-bold text-black-primary text-left mb-8">
 				{category.title}
 			</h2>
-			<div class="grid grid-cols-3 gap-6">
+			<div class="grid grid-cols-2 md:grid-cols-3 gap-6">
 				{#each category.products.filter((p) => p.image) as product}
 					<button
 						type="button"
@@ -75,7 +75,7 @@
 		onkeydown={(e) => e.key === 'Escape' && closeModal()}
 	>
 		<div
-			class="relative bg-white-primary rounded-tr-[6cqw] rounded-bl-[6cqw] max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-xl"
+			class="relative bg-white-primary max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-xl"
 		>
 			<div class="p-6">
 				<img
@@ -86,27 +86,12 @@
 				{#if modalProduct.description}
 					<p
 						id="modal-title"
-						class="mt-6 text-w6 text-black-primary leading-relaxed"
+						class="mt-6 text-w10 lg:text-w6 text-black-primary leading-relaxed"
 					>
 						{modalProduct.description}
 					</p>
 				{/if}
 			</div>
-			<button
-				type="button"
-				class="absolute top-4 right-4 p-2 rounded-full bg-red-dark text-white-primary hover:bg-red-dark/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-dark"
-				onclick={closeModal}
-				aria-label="Cerrar"
-			>
-				<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						d="M6 18L18 6M6 6l12 12"
-					/>
-				</svg>
-			</button>
 		</div>
 	</div>
 {/if}
