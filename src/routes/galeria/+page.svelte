@@ -80,7 +80,7 @@
 				{category.title}
 			</h2>
 			<div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-				{#each category.products as product}
+				{#each category.products.filter((p) => p.image) as product}
 					<button
 						type="button"
 						id="{toSlug(category.title)}--{toSlug(product.name)}"

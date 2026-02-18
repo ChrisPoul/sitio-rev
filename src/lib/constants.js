@@ -12,7 +12,7 @@ export const productsByCategory = [
 				name: 'COMPOSITE',
 				description:
 					'Fabricada con materiales compuestos de alta resistencia. Máxima durabilidad con el menor peso. Ideal para reducir consumo de combustible.',
-				image: null
+				image: '/productos/Caja seca-composite.HEIC'
 			},
 			{
 				name: 'PANEL',
