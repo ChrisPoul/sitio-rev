@@ -68,7 +68,7 @@
 
 <MainBanner imageSrc="/5.png" position="left">
 	{#snippet title()}
-		<b>Galería</b><br />
+		<b>Galería</b>
 		de productos
 	{/snippet}
 </MainBanner>
