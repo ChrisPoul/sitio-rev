@@ -58,13 +58,13 @@ desarrollo de cada producto entregado a usted.
 
 <section class="mx-30 mb-20 space-y-8">
 	<div class="space-y-4">
-		<h2 class="text-w10 font-bold text-red-dark">Nuestra Identidad y Propósito</h2>
+		<h2 class="text-w11 font-bold text-red-dark">Nuestra Identidad y Propósito</h2>
 		<p>Nuestra filosofía organizacional define quiénes somos y hacia dónde vamos. Es el fundamento que guía cada decisión y acción en Carrocerías 3G.</p>
 	</div>
 
 	<div class="grid gap-8 md:grid-cols-3">
 		<div class="space-y-3">
-			<h3 class="text-2xl font-bold text-red-dark">1. Misión</h3>
+			<h3 class="text-w9 font-bold text-red-dark">1. Misión</h3>
 			<p>
 				En Carrocerías 3G desarrollamos y fabricamos carrocerías para el transporte de carga, vendemos
 				e instalamos equipo aliado y accesorios, mediante procesos y tecnología de vanguardia y de
@@ -74,7 +74,7 @@ desarrollo de cada producto entregado a usted.
 		</div>
 
 		<div class="space-y-3">
-			<h3 class="text-2xl font-bold text-red-dark">2. Visión</h3>
+			<h3 class="text-w9 font-bold text-red-dark">2. Visión</h3>
 			<p>
 				Ser una empresa líder, innovadora, y sostenible con cobertura nacional que brinde soluciones
 				integrales para el transporte de carga.
@@ -82,7 +82,7 @@ desarrollo de cada producto entregado a usted.
 		</div>
 
 		<div class="space-y-3">
-			<h3 class="text-2xl font-bold text-red-dark">3. Valores</h3>
+			<h3 class="text-w9 font-bold text-red-dark">3. Valores</h3>
 			<p>
 				<b class="text-red-dark">Integridad:</b> Creamos una cultura de trabajo idónea, que proporciona coherencia en el
 				comportamiento y genera confianza con nuestros clientes y proveedores.
