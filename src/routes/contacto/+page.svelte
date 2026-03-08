@@ -160,8 +160,11 @@
 								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5 text-w4 w-full"
 							>
 								<option value="">ELIGE UNA OPCIÓN</option>
-								<option value="opcion1">Opción 1</option>
-								<option value="opcion2">Opción 2</option>
+								<option value="Caja seca">Caja seca</option>
+								<option value="Caja de conservación">Caja de conservación</option>
+								<option value="Caja de congelación/refrigeración">
+									Caja de congelación/refrigeración
+								</option>
 							</select>
 						</div>
 						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min col-span-1">
@@ -241,8 +244,9 @@
 								class="border-none focus:outline-none bg-inherit rounded-tr-[2cqw] py-1.5 pr-5 text-w4 w-full"
 							>
 								<option value="">ELIGE UNA OPCIÓN</option>
-								<option value="opcion1">Opción 1</option>
-								<option value="opcion2">Opción 2</option>
+								<option value="Carrocería">Carrocería</option>
+								<option value="Rampa hidráulica">Rampa hidráulica</option>
+								<option value="Sistema eléctrico">Sistema eléctrico</option>
 							</select>
 						</div>
 					</div>
