@@ -23,8 +23,7 @@
 			class="w-full max-w-4xl h-auto"
 			controls
 		>
-			<source src="/Carrocerias3G-final.mov" type="video/quicktime" />
-			<source src="/Carrocerias3G-final.mov" type="video/mp4" />
+			<source src="/Carrocerias3G-final.mp4" type="video/mp4" />
 			Tu navegador no soporta el elemento de video.
 		</video>
 	</div>

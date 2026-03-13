@@ -165,6 +165,8 @@
 								<option value="Caja de congelación/refrigeración">
 									Caja de congelación/refrigeración
 								</option>
+								<option value="Plataforma">Plataforma</option>
+								<option value="Otro">Otro</option>
 							</select>
 						</div>
 						<div class="flex items-center gap-4 bg-slate-200 rounded-tr-[2cqw] rounded-bl-[2cqw] pl-5 h-min col-span-1">
